@@ -12,7 +12,7 @@
                     <items>
                         <table alignment="left" id="fOm-Ng-BqK">
                             <items>
-                                <tableRow id="UBU-z4-fC5">
+                                <tableRow identifier="RecipeRowType" id="UBU-z4-fC5" customClass="RecipeRowController" customModule="Recipes_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="ljU-5e-Pd3">
                                         <items>
                                             <label alignment="left" text="Label" numberOfLines="0" id="7Tu-aY-YUE"/>
@@ -34,6 +34,10 @@
                                             </mask>
                                         </variation>
                                     </group>
+                                    <connections>
+                                        <outlet property="ingredientsLabel" destination="NQN-6r-Zho" id="smX-Cn-J9k"/>
+                                        <outlet property="titleLabel" destination="7Tu-aY-YUE" id="F6c-5g-zcm"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>
@@ -48,6 +52,9 @@
                             <include reference="fOm-Ng-BqK"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="table" destination="fOm-Ng-BqK" id="Rb7-sJ-rfE"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="285" y="302"/>

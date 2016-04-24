@@ -24,7 +24,17 @@ import Foundation
 import WatchKit
 
 class RecipesController: WKInterfaceController {
+    
+    @IBOutlet var table: WKInterfaceTable!
+    
 
   
 
 }
+
+
+
+
+
+
+

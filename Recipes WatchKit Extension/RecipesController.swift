@@ -27,7 +27,7 @@ class RecipesController: WKInterfaceController {
     
     @IBOutlet var table: WKInterfaceTable!
     
-
+    var recipeStore = RecipeStore()
   
 
 }

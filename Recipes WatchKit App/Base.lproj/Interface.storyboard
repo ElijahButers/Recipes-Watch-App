@@ -37,6 +37,7 @@
                                     <connections>
                                         <outlet property="ingredientsLabel" destination="NQN-6r-Zho" id="smX-Cn-J9k"/>
                                         <outlet property="titleLabel" destination="7Tu-aY-YUE" id="F6c-5g-zcm"/>
+                                        <segue destination="Vxy-wP-l66" kind="push" id="ebJ-Xm-WRk"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -58,6 +59,13 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="285" y="302"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="QmQ-Uy-mrf">
+            <objects>
+                <controller id="Vxy-wP-l66"/>
+            </objects>
+            <point key="canvasLocation" x="526.56410256410265" y="301.20512820512823"/>
         </scene>
     </scenes>
 </document>

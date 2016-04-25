@@ -86,6 +86,9 @@
                                             </mask>
                                         </variation>
                                     </group>
+                                    <connections>
+                                        <outlet property="titleLabel" destination="Nx9-L9-dMT" id="uQp-ZG-hle"/>
+                                    </connections>
                                 </tableRow>
                                 <tableRow identifier="RecipeStep" id="8dV-d1-LLf" customClass="RecipeStepController" customModule="Recipes_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="F2J-Vl-uc4">
@@ -103,6 +106,9 @@
                                             </mask>
                                         </variation>
                                     </group>
+                                    <connections>
+                                        <outlet property="stepLabel" destination="Xb4-RH-udO" id="JYt-f5-k04"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>

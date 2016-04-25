@@ -63,7 +63,61 @@
         <!--Interface Controller-->
         <scene sceneID="QmQ-Uy-mrf">
             <objects>
-                <controller id="Vxy-wP-l66"/>
+                <controller id="Vxy-wP-l66">
+                    <items>
+                        <table alignment="left" id="ys0-xW-Qdg">
+                            <items>
+                                <tableRow id="oQB-EW-k3F">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="8Yf-y1-bab">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="Nx9-L9-dMT">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <variation key="default">
+                                            <mask key="items">
+                                                <exclude reference="Nx9-L9-dMT"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="device=watch42mm">
+                                            <mask key="items">
+                                                <include reference="Nx9-L9-dMT"/>
+                                            </mask>
+                                        </variation>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="8dV-d1-LLf">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="F2J-Vl-uc4">
+                                        <items>
+                                            <label alignment="left" text="Label" numberOfLines="0" id="Xb4-RH-udO"/>
+                                        </items>
+                                        <variation key="default">
+                                            <mask key="items">
+                                                <exclude reference="Xb4-RH-udO"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="device=watch42mm">
+                                            <mask key="items">
+                                                <include reference="Xb4-RH-udO"/>
+                                            </mask>
+                                        </variation>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="ys0-xW-Qdg"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="ys0-xW-Qdg"/>
+                        </mask>
+                    </variation>
+                </controller>
             </objects>
             <point key="canvasLocation" x="526.56410256410265" y="301.20512820512823"/>
         </scene>

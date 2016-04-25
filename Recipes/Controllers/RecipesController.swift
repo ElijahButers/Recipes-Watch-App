@@ -24,7 +24,6 @@ import UIKit
 
 class RecipesController: UITableViewController {
 
-    @IBOutlet var table: WKInterfaceTable!
   var recipeStore = RecipeStore()
 
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

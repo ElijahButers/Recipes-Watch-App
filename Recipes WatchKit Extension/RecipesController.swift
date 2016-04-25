@@ -29,6 +29,16 @@ class RecipesController: WKInterfaceController {
     
     var recipeStore = RecipeStore()
   
+    override func awakeWithContext(context: AnyObject?) {
+        super.awakeWithContext(context)
+        
+        table.setNumberOfRows(recipeStore.recipes.count, withRowType: "RecipeRowType")
+        for (index, recipe) in recipeStore.recipes.enumerate() {
+            let controller = table.rowControllerAtIndex(index) as! RecipeRowController
+            controller.titleLabel.setText(recipe.name)
+            controller.ingredientsLabel.setText("\(recipe.ingredients.count) ingredients")
+        }
+    }
 
 }
 

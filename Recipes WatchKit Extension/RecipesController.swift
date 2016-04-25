@@ -39,6 +39,11 @@ class RecipesController: WKInterfaceController {
             controller.ingredientsLabel.setText("\(recipe.ingredients.count) ingredients")
         }
     }
+    
+    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+        
+        return recipeStore.recipes[rowIndex]
+    }
 
 }
 

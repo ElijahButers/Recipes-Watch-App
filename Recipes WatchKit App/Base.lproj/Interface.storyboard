@@ -67,7 +67,7 @@
                     <items>
                         <table alignment="left" id="ys0-xW-Qdg">
                             <items>
-                                <tableRow id="oQB-EW-k3F">
+                                <tableRow identifier="RecipeHeader" selectable="NO" id="oQB-EW-k3F" customClass="RecipeHeaderController" customModule="Recipes_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="8Yf-y1-bab">
                                         <items>
                                             <label alignment="left" text="Label" numberOfLines="0" id="Nx9-L9-dMT">
@@ -87,7 +87,7 @@
                                         </variation>
                                     </group>
                                 </tableRow>
-                                <tableRow id="8dV-d1-LLf">
+                                <tableRow identifier="RecipeStep" id="8dV-d1-LLf" customClass="RecipeStepController" customModule="Recipes_WatchKit_Extension">
                                     <group key="rootItem" width="1" height="0.0" alignment="left" id="F2J-Vl-uc4">
                                         <items>
                                             <label alignment="left" text="Label" numberOfLines="0" id="Xb4-RH-udO"/>

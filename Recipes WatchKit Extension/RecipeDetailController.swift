@@ -18,6 +18,17 @@ class RecipeDetailController: WKInterfaceController {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
+        if let recipe = context as? Recipe {
+            let rowTypes: [String] = ["RecipeHeader"]
+            table.setRowTypes(rowTypes)
+            
+            for i in 0..<table.numberOfRows {
+                let row = table.rowControllerAtIndex(i)
+                if let header = row as? RecipeHeaderController {
+                    header.titleLabel.setText(recipe.name)
+                }
+            }
+        }
     }
 
     override func willActivate() {

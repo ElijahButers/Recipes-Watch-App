@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="285" y="302"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Recipe Detail Controller-->
         <scene sceneID="QmQ-Uy-mrf">
             <objects>
-                <controller id="Vxy-wP-l66">
+                <controller id="Vxy-wP-l66" customClass="RecipeDetailController" customModule="Recipes_WatchKit_Extension">
                     <items>
                         <table alignment="left" id="ys0-xW-Qdg">
                             <items>
@@ -123,6 +123,9 @@
                             <include reference="ys0-xW-Qdg"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <outlet property="table" destination="ys0-xW-Qdg" id="DFh-Lf-5w7"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="526.56410256410265" y="301.20512820512823"/>
